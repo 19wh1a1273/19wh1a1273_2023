@@ -52,8 +52,11 @@ string isBalanced(string s)
     return "False";
 
 }
+
 int main()
+
 {
+
     int t;
     cin>>t;
     string str;
