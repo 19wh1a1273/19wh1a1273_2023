@@ -1,11 +1,9 @@
 Input:
------
 3
 ({[]})
 (){}[]
 ({[}])
 output:
--------
 True
 True
 False
