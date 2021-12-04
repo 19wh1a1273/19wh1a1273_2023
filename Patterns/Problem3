@@ -1,1 +1,27 @@
+INPUT:
+5
 
+OUTPUT:
+A
+B B
+C C C
+D D D D
+E E E E E
+
+$$PROGRAM:
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n,i,j;
+    char ch;
+    cin>>n;
+    ch='A';
+    for(i=0;i<n;i++){
+        for(j=0;j<i+1;j++){
+            cout<<ch<<" ";
+        }
+        ch++;
+        cout<<"\n";
+    }
+    return 0;
+}
