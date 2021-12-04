@@ -8,7 +8,7 @@ C C C
 D D D D
 E E E E E
 
-$$PROGRAM:
+PROGRAM:
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
