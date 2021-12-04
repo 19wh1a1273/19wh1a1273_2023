@@ -1,1 +1,27 @@
+INPUT:
+5
 
+OUTPUT:
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+
+Program:
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n,i,j,k;
+    cin>>n;
+    for(i=0;i<n;i++){
+        k=1;
+        for(j=0;j<i+1;j++){
+            cout<<k<<" ";
+            k++;
+        }
+        cout<<"\n";
+    }
+    return 0;
+}
