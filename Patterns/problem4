@@ -1,1 +1,44 @@
+INPUT:
+5
 
+OUTPUT:
+1 2 3 4 5
+2 3 4 5
+3 4 5
+4 5
+5
+4 5
+3 4 5
+2 3 4 5
+1 2 3 4 5
+
+Program:
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n,i,j,k,p;
+    cin>>n;
+    k=0;
+    p=0;
+    for(i=0;i<n;i++){
+        p++;
+        k=p;
+        for(j=0;j<(n-i);j++){
+            cout<<k<<" ";
+            k++;
+        }
+        cout<<endl;
+    }
+    p=5;
+    for(i=1;i<n;i++){
+        p--;
+        k=p;
+        for(j=0;j<i+1;j++){
+            cout<<k<<" ";
+            k++;
+        }
+        cout<<endl;
+    }
+    return 0;
+}
