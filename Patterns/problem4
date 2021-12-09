@@ -30,7 +30,7 @@ int main(){
         }
         cout<<endl;
     }
-    p=5;
+    p=n;
     for(i=1;i<n;i++){
         p--;
         k=p;
