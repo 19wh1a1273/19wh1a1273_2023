@@ -1,0 +1,36 @@
+Input: nums=[3,2,2,3] , val=3
+OUTPUT: 2
+//[2,2,_,_]
+
+Code:
+-----
+class Solution {
+public:
+    int removeElement(vector<int>& nums, int val) {
+        int k=0;
+        int i;
+        for(i=0;i<nums.size();i++){
+            if(val!=nums[i]){
+                nums[k]=nums[i];
+                k++;
+            }
+        }
+        return k;
+    }
+};
+
+(Or)
+class Solution {
+public:
+    int removeElement(vector<int>& nums, int val) {
+        vector<int>v;
+        int i;
+        for(i=0;i<(nums.size());i++){
+            if(val!=nums[i]){
+                v.push_back(nums[i]);
+            }
+        }
+        nums=v;  //modifing new vector with old vector(i.e;modifing v with nums)
+        return v.size();
+    }
+};
