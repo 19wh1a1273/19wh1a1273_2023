@@ -31,6 +31,6 @@ public:
             }
         }
         nums=v;  //modifing new vector with old vector(i.e;modifing v with nums)
-        return v.size();
+        return nums.size();
     }
 };
